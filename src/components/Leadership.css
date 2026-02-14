@@ -1,0 +1,61 @@
+.leadership-section {
+    background-color: #000;
+    color: #fff;
+    padding: 80px 20px;
+  }
+  
+  .leadership-heading {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .leadership-subheading {
+    text-align: center;
+    color: #ccc;
+    margin-bottom: 40px;
+    font-style: italic;
+  }
+  
+  .leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  .leadership-card {
+    background-color: #1a1a2e;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  }
+  
+  .leadership-card h2 {
+    color: #ffc300;
+    margin-bottom: 5px;
+  }
+  
+  .leadership-card h3 {
+    color: #ccc;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  .leadership-duration {
+    color: #999;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  
+  .leadership-card ul {
+    padding-left: 20px;
+  }
+  
+  .leadership-card li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+  }
+  

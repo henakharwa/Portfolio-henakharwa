@@ -1,0 +1,90 @@
+.home-container {
+  background-color: #000;
+  color: white;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Two-column layout */
+.home-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;   /* shift content to left */
+  gap: 40px;                     /* reduce space between image and text */
+  max-width: 1100px;
+  width: 100%;
+  margin-left: 40px;             /* pushes whole section slightly left */
+}
+
+
+/* Profile image */
+.home-image img {
+  width: 320px;
+  height: 400px;
+  object-fit: cover;
+  margin-left: -100px;
+  margin-top: -65px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Text content */
+.home-content {
+  max-width: 550px;
+  margin-left: 80px;
+  margin-bottom: 60px;
+}
+
+.home-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.home-content p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: #ffc300;
+}
+
+/* Animation */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-text {
+  display: inline-block;
+  animation: fadeSlideUp 2s ease-out;
+}
+
+/* Responsive (mobile) */
+@media (max-width: 768px) {
+  .home-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .home-image img {
+    width: 240px;
+    height: 300px;
+  }
+
+  .home-content h1 {
+    font-size: 2.2rem;
+  }
+}

@@ -1,0 +1,41 @@
+.about-container {
+    background-color: #000;
+    color: white;
+    padding: 80px 100px;
+    min-height: 100vh;
+  }
+  
+  .about-heading {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .about-content {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+  }
+  
+  .highlight {
+    color: #17b890;
+    font-weight: bold;
+  }
+  
+  .resume-btn {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    transition: all 0.3s;
+  }
+  
+  .resume-btn:hover {
+    background-color: #17b890;
+    border-color: #17b890;
+    color: black;
+  }
+  

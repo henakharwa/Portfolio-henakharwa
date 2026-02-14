@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+  padding-top: 70px;
+}
+
+@media (max-width: 768px) {
+  .timeline-entry {
+    width: 100% !important;
+    left: 0 !important;
+    transform: none !important;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .timeline-circle {
+    left: 20px !important;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+
+  .project-title {
+    font-size: 1.3rem;
+  }
+
+  .contact-container,
+  .about-section,
+  .leadership-section {
+    padding: 60px 20px;
+  }
+
+  .timeline-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .job-title,
+  .job-duration {
+    font-size: 1rem;
+  }
+}
+
