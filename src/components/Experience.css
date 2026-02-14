@@ -1,137 +1,169 @@
-.timeline-outer {
+/* SECTION BACKGROUND */
+.exp-section {
   background: #000;
-  padding: 100px 20px;
-  color: white;
+  padding: 90px 20px;
+  color: #fff;
 }
 
-.timeline-heading {
-  font-size: 3rem;
-  font-weight: bold;
-  text-align: center;
-}
-
-.timeline-subheading {
-  text-align: center;
-  color: #888;
-  margin-bottom: 50px;
-}
-
-.timeline {
-  position: relative;
+.exp-container {
   max-width: 1100px;
-  margin: auto;
+  margin: 0 auto;
 }
 
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 4px;
-  background-color: white;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-}
-
-.timeline-row {
-  position: relative;
-  margin: 60px 0;
-  display: flex;
-  align-items: flex-start;
-}
-
-/* Logo on vertical timeline */
-.timeline-marker {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 3;
-  top: 0;
-}
-
-.timeline-circle {
-  width: 60px;
-  height: 60px;
-  background: white;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 0 0 4px #000;
-}
-
-.timeline-circle img {
-  width: 60px;
-  height: 30px;
-  object-fit: contain;
-}
-
-/* Card positions */
-.timeline-entry {
-  position: relative;
-  width: 50%;
-  box-sizing: border-box;
-  padding: 0 20px;
-  z-index: 2;
-}
-
-.timeline-entry.left {
-  left: 0;
-  transform: translateX(-30px);
-  text-align: right;
-}
-
-.timeline-entry.right {
-  left: 50%;
-  transform: translateX(30px);
-  text-align: left;
-}
-
-.timeline-content {
-  background-color: #1a1a2e;
-  border-radius: 12px;
-  padding: 25px 30px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-  text-align: left;
-}
-
-/* Header inside card */
-.timeline-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.job-title {
-  color: #ffc300;
-  font-size: 1.5rem;
-  font-weight: bold;
+.exp-heading {
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
   margin: 0;
 }
 
-.job-duration {
-  color: #ffc300;
-  font-size: 0.9rem;
-  font-weight: 500;
+.exp-subheading {
+  text-align: center;
+  color: #8a8a8a;
+  margin: 12px 0 50px;
+  letter-spacing: 0.08em;
+}
+
+/* LIST */
+.exp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* CARD - EXACT NAVBAR BLUE */
+.exp-card {
+  background-color: #1a1a2e; /* EXACT SAME AS NAVBAR */
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 26px 30px 18px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.exp-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.7);
+}
+
+/* HEADER ROW */
+.exp-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.exp-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 0;
+  flex: 1; /* allows it to take available space */
+}
+
+
+.exp-logo-wrap {
+  width: 80px;     /* increased width */
+  height: 55px;    /* increased height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.exp-logo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #ffffff;
+  padding: 6px;        /* slightly more padding */
+  border-radius: 8px;
+}
+
+
+/* COMPANY NAME */
+.exp-company {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin: 0 auto;   /* shifts toward center */
+  text-align: center;
+  flex: 1;
+}
+
+
+
+/* ROLE */
+.exp-role {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffc300; /* matches your navbar hover */
   white-space: nowrap;
 }
 
-.timeline-content h3 {
-  color: #ccc;
-  font-weight: 500;
-  margin-bottom: 1rem;
+/* DIVIDER */
+.exp-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.14);
+  margin: 16px 0 18px;
 }
 
-.timeline-content ul {
-  list-style-type: disc;
-  padding-left: 1.2rem;
+/* BULLETS */
+.exp-bullets {
   margin: 0;
+  padding-left: 20px;
 }
 
-.timeline-content li {
+.exp-bullets li {
   margin-bottom: 12px;
-  line-height: 1.6;
-  font-size: 1rem;
-  color: #eee;
+  line-height: 1.7;
+  font-size: 1.02rem;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.exp-tools {
+  margin-top: 10px;
+}
+
+/* FOOTER */
+.exp-footer {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .exp-heading {
+    font-size: 2.3rem;
+  }
+
+  .exp-card {
+    padding: 22px 18px 16px;
+  }
+
+  .exp-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .exp-company {
+    font-size: 1.25rem;
+    white-space: normal;
+  }
+
+  .exp-role {
+    font-size: 1.05rem;
+  }
+
+.exp-logo-wrap {
+  width: 70px;
+  height: 48px;
+}
 }
