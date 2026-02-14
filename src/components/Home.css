@@ -16,7 +16,8 @@
   gap: 40px;                     /* reduce space between image and text */
   max-width: 1100px;
   width: 100%;
-  margin-left: 40px;             /* pushes whole section slightly left */
+  margin-left: 80px;             /* pushes whole section slightly left */
+  margin-bottom: 35px;
 }
 
 
