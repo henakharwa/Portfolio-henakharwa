@@ -50,6 +50,20 @@
   color: #ccc;
 }
 
+.project-achievement {
+  margin: 10px 0 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: rgba(255, 195, 0, 0.12);
+  border: 1px solid rgba(255, 195, 0, 0.35);
+  color: #ffc300;
+  font-weight: 700;
+  font-size: 0.98rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .project-tech {
   display: flex;
   flex-wrap: wrap;
