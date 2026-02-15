@@ -5,38 +5,47 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  /* keep desktop padding */
   padding: 40px 20px;
+  box-sizing: border-box;
+  overflow-x: hidden; /* prevents any child overflow from showing */
 }
 
-/* Two-column layout */
+/* Two-column layout (desktop) */
 .home-wrapper {
   display: flex;
   align-items: center;
-  justify-content: flex-start;   /* shift content to left */
-  gap: 40px;                     /* reduce space between image and text */
+  justify-content: flex-start;
+  gap: 40px;
   max-width: 1100px;
   width: 100%;
-  margin-left: 80px;             /* pushes whole section slightly left */
+
+  margin-left: 80px;
   margin-bottom: 80px;
+  box-sizing: border-box;
 }
 
-
-/* Profile image */
+/* Profile image (desktop) */
 .home-image img {
   width: 320px;
   height: 400px;
   object-fit: cover;
+
   margin-left: -100px;
   margin-top: -65px;
+
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  display: block;
 }
 
-/* Text content */
+/* Text content (desktop) */
 .home-content {
   max-width: 550px;
   margin-left: 80px;
   margin-bottom: 60px;
+  box-sizing: border-box;
 }
 
 .home-content h1 {
@@ -72,20 +81,54 @@
   animation: fadeSlideUp 2s ease-out;
 }
 
-/* Responsive (mobile) */
+/* -------------------- */
+/* Responsive (mobile)  */
+/* -------------------- */
 @media (max-width: 768px) {
+  .home-container {
+    /* add breathing room under fixed navbar */
+    padding: 24px 16px 40px;
+    align-items: flex-start; /* avoid vertical centering pushing content weirdly */
+    min-height: auto;
+  }
+
   .home-wrapper {
     flex-direction: column;
+    align-items: center;
     text-align: center;
-    gap: 30px;
+    gap: 22px;
+
+    /* remove desktop shifting that causes overflow/white strip */
+    margin-left: 0;
+    margin-bottom: 0;
+    width: 100%;
   }
 
   .home-image img {
-    width: 240px;
-    height: 300px;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+
+    /* remove negative margins on mobile (major cause of overflow + sticking) */
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .home-content {
+    max-width: 420px;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 0 8px;
   }
 
   .home-content h1 {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
+    line-height: 1.15;
+  }
+
+  .home-content p {
+    font-size: 1.05rem;
+    margin-top: 14px;
+    line-height: 1.6;
   }
 }
