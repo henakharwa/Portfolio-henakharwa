@@ -3,7 +3,7 @@ body {
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
-  padding-top: 70px;
+  padding-top: 64px;
 }
 
 @media (max-width: 768px) {

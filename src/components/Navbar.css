@@ -1,35 +1,29 @@
 .navbar {
   background-color: #1b263b;
   color: white;
-  padding: 1px 30px;
+  padding: 12px 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 12px;
 
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
   box-sizing: border-box;
+  height: 64px;
 }
 
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  flex-wrap: wrap;
-}
-
+/* Desktop nav links */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 18px;
   margin: 0;
   padding: 0;
+  align-items: center;
 }
 
 .nav-links a {
@@ -44,33 +38,106 @@
   color: #ffc300;
 }
 
+/* Center logo stays centered */
 .logo {
+  margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
-  flex-grow: 1;
+  flex: 1;               /* this is the key */
 }
+
+.logo-link {
+  color: white;
+  text-decoration: none;
+}
+
+/* Give left/right a fixed-ish width so center stays center */
+.nav-links.left,
+.nav-links.right {
+  flex: 0 0 auto;
+}
+
+/* Hamburger */
+.hamburger {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+}
+
+.hamburger span {
+  display: block;
+  height: 2px;
+  margin: 6px 0;
+  background: #fff;
+  border-radius: 2px;
+}
+
+/* Mobile overlay menu */
+.mobile-menu {
+  position: fixed;
+  top: 64px;                 /* match navbar height */
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 64px);
+  background: #1b263b;
+  transform: translateY(-120%);
+  transition: transform 0.25s ease;
+  z-index: 999;
+  overflow-y: auto;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.mobile-menu.open {
+  transform: translateY(0);
+}
+
+.mobile-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.mobile-links a:hover {
+  color: #ffc300;
+}
+
+/* Backdrop */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 998;
+}
+
+/* Visibility helpers */
+.desktop-only {
+  display: flex;
+}
+
+.mobile-only {
+  display: none;
+}
+
+/* Mobile behavior */
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
+  .desktop-only {
+    display: none;
   }
-
-  .navbar-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-  }
-
-  .logo {
-    align-self: center;
-    margin: 10px 0;
+  .mobile-only {
+    display: inline-block;
   }
 }
-  
