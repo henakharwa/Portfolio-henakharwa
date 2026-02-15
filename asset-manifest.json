@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-henakharwa/static/css/main.ba925c1c.css",
-    "main.js": "/Portfolio-henakharwa/static/js/main.ff6288a8.js",
+    "main.css": "/Portfolio-henakharwa/static/css/main.dd0274cb.css",
+    "main.js": "/Portfolio-henakharwa/static/js/main.36500ae4.js",
     "static/js/453.61c116cd.chunk.js": "/Portfolio-henakharwa/static/js/453.61c116cd.chunk.js",
     "static/media/charusat.png": "/Portfolio-henakharwa/static/media/charusat.e52dd0f8012aca86c109.png",
     "static/media/profile.jpeg": "/Portfolio-henakharwa/static/media/profile.f69d7f60e14d845a7f01.jpeg",
@@ -9,12 +9,12 @@
     "static/media/enlighten.png": "/Portfolio-henakharwa/static/media/enlighten.0bc6e045157db7694f91.png",
     "static/media/stevens.png": "/Portfolio-henakharwa/static/media/stevens.a5accc7345627ea2c33b.png",
     "index.html": "/Portfolio-henakharwa/index.html",
-    "main.ba925c1c.css.map": "/Portfolio-henakharwa/static/css/main.ba925c1c.css.map",
-    "main.ff6288a8.js.map": "/Portfolio-henakharwa/static/js/main.ff6288a8.js.map",
+    "main.dd0274cb.css.map": "/Portfolio-henakharwa/static/css/main.dd0274cb.css.map",
+    "main.36500ae4.js.map": "/Portfolio-henakharwa/static/js/main.36500ae4.js.map",
     "453.61c116cd.chunk.js.map": "/Portfolio-henakharwa/static/js/453.61c116cd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba925c1c.css",
-    "static/js/main.ff6288a8.js"
+    "static/css/main.dd0274cb.css",
+    "static/js/main.36500ae4.js"
   ]
 }
