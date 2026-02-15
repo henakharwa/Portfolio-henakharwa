@@ -10,7 +10,7 @@ const experiences = [
   {
     duration: "Apr 2025 – Present | Hoboken, NJ, USA",
     logo: stevensLogo,
-    role: "Research Assistnat",
+    role: "Research Assistant",
     company: "STEVENS INSTITUTE OF TECHNOLOGY",
     bullets: [
       "Built an AI-driven detection system using RAG and embeddings to identify anomalous content with 96% accuracy.",
