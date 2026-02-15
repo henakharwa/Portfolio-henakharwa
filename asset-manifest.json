@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio-henakharwa/static/css/main.acc7ae76.css",
-    "main.js": "/Portfolio-henakharwa/static/js/main.36500ae4.js",
+    "main.js": "/Portfolio-henakharwa/static/js/main.fc99cabf.js",
     "static/js/453.61c116cd.chunk.js": "/Portfolio-henakharwa/static/js/453.61c116cd.chunk.js",
     "static/media/charusat.png": "/Portfolio-henakharwa/static/media/charusat.e52dd0f8012aca86c109.png",
     "static/media/profile.jpeg": "/Portfolio-henakharwa/static/media/profile.f69d7f60e14d845a7f01.jpeg",
@@ -10,11 +10,11 @@
     "static/media/stevens.png": "/Portfolio-henakharwa/static/media/stevens.a5accc7345627ea2c33b.png",
     "index.html": "/Portfolio-henakharwa/index.html",
     "main.acc7ae76.css.map": "/Portfolio-henakharwa/static/css/main.acc7ae76.css.map",
-    "main.36500ae4.js.map": "/Portfolio-henakharwa/static/js/main.36500ae4.js.map",
+    "main.fc99cabf.js.map": "/Portfolio-henakharwa/static/js/main.fc99cabf.js.map",
     "453.61c116cd.chunk.js.map": "/Portfolio-henakharwa/static/js/453.61c116cd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.acc7ae76.css",
-    "static/js/main.36500ae4.js"
+    "static/js/main.fc99cabf.js"
   ]
 }
