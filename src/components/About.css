@@ -1,41 +1,87 @@
 .about-container {
-    background-color: #000;
-    color: white;
-    padding: 80px 100px;
-    min-height: 100vh;
+  background-color: #000;
+  color: white;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 80px 20px; /* reduced side padding for responsiveness */
+  box-sizing: border-box;
+}
+
+/* Wrapper to control readable width */
+.about-wrapper {
+  max-width: 900px;
+  width: 100%;
+}
+
+/* Heading */
+.about-heading {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Paragraphs */
+.about-content {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+/* Highlight text */
+.highlight {
+  color: #17b890;
+  font-weight: bold;
+}
+
+/* Resume button */
+.resume-btn {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  transition: all 0.3s;
+}
+
+.resume-btn:hover {
+  background-color: #17b890;
+  border-color: #17b890;
+  color: black;
+}
+
+/* ---------------- Mobile Responsive ---------------- */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 60px 16px;   /* fix narrow text issue */
+    align-items: flex-start;
   }
-  
+
+  .about-wrapper {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
   .about-heading {
-    font-size: 3.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-size: 2.2rem;
+    text-align: center;
+    line-height: 1.2;
   }
-  
+
   .about-content {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin-bottom: 25px;
+    font-size: 1.05rem;
+    text-align: left;
+    line-height: 1.7;
   }
-  
-  .highlight {
-    color: #17b890;
-    font-weight: bold;
-  }
-  
+
   .resume-btn {
-    display: inline-block;
-    margin-top: 20px;
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-    padding: 10px 20px;
-    border: 1px solid #fff;
-    transition: all 0.3s;
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
   }
-  
-  .resume-btn:hover {
-    background-color: #17b890;
-    border-color: #17b890;
-    color: black;
-  }
-  
+}
