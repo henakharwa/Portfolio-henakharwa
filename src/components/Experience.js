@@ -1,17 +1,17 @@
 import React from "react";
 import "./Experience.css";
 
-import charusatLogo from "../Assets/charusat.png";
 import dhyeLogo from "../Assets/enlighten.png";
 import stevensLogo from "../Assets/stevens.png";
 import techxiLogo from "../Assets/techxi.png";
+import atliqLogo from "../Assets/Atliq.png"
 
 const experiences = [
   {
     duration: "Apr 2025 – Present | Hoboken, NJ, USA",
     logo: stevensLogo,
     role: "Research Assistant",
-    company: "STEVENS INSTITUTE OF TECHNOLOGY",
+    company: "Stevens Institute of Technology",
     bullets: [
       "Built an AI-driven detection system using RAG and embeddings to identify anomalous content with 96% accuracy.",
       "Fine-tuned LLMs (Grok AI, Hugging Face) with LoRA tuning and prompt optimization, reducing hallucinations by 27%",
@@ -20,10 +20,10 @@ const experiences = [
     ],
   },
   {
-    duration: "Jan 2024 – Jun 2024 | Vadodara, Gujarat, India",
+    duration: "Dec 2023 – Jul 2024 | Vadodara, Gujarat, India",
     logo: techxiLogo,
-    role: "AI / ML Intern",
-    company: "DHYEY TECHNOLOGIES - TECHXI",
+    role: "AI/ML Engineer",
+    company: "Dhyey Technologies - TechXi",
     bullets: [
       "Designed GPU-optimized deep neural nets in TensorFlow, reduced training time 30% & increased accuracy by 40%",
       "Used transformers (BERT/GPT) for summarization, embeddings, and fine-tuning, improving relevance by 25%",
@@ -32,10 +32,10 @@ const experiences = [
     ],
   },
   {
-    duration: "May 2023 – Aug 2023 | Vadodara, Gujarat, India",
-    logo: charusatLogo,
-    role: "Machine Learning Intern",
-    company: "CHARUSAT UNIVERSITY",
+    duration: "Sep 2022 – Nov 2023 | Vadodara, Gujarat, India",
+    logo: atliqLogo,
+    role: "AI/ML Developer",
+    company: "AtliQ Technologies",
     bullets: [
       "Modeled hybrid recommender with TensorFlow/PyTorch + CUDA, reducing misclassification 25% & speeding training",
       "Revamped e-commerce recs with Word2Vec/BERT embeddings, boosting engagement 20% and conversions 5%",
@@ -44,7 +44,7 @@ const experiences = [
     ],
   },
   {
-    duration: "May 2022 – Jul 2022 | Gujarat, India",
+    duration: "May 2022 – Aug 2022 | Vadodara, Gujarat, India",
     logo: dhyeLogo,
     role: "Python and ML Intern",
     company: "ENLIGHTEN INFOSYSTEMS",
