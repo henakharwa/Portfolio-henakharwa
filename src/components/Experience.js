@@ -47,7 +47,7 @@ const experiences = [
     duration: "May 2022 – Aug 2022 | Vadodara, Gujarat, India",
     logo: dhyeLogo,
     role: "Python and ML Intern",
-    company: "ENLIGHTEN INFOSYSTEMS",
+    company: "Enlighten Infosystems",
     bullets: [
       "Established expert system in PyTorch with CUDA, reducing decision time 30% & boosting performance 10%",
       "Applied OpenCV + deep CNNs for image analysis, improving accuracy 15% and reducing processing time 25%",
