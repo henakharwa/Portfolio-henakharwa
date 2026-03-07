@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Portfolio-henakharwa/static/css/main.acc7ae76.css",
-    "main.js": "/Portfolio-henakharwa/static/js/main.6f6e015f.js",
-    "static/js/453.61c116cd.chunk.js": "/Portfolio-henakharwa/static/js/453.61c116cd.chunk.js",
+    "main.css": "/Portfolio-henakharwa/static/css/main.a4bc8f6b.css",
+    "main.js": "/Portfolio-henakharwa/static/js/main.c2a5f583.js",
+    "static/js/453.b903bf65.chunk.js": "/Portfolio-henakharwa/static/js/453.b903bf65.chunk.js",
     "static/media/Atliq.png": "/Portfolio-henakharwa/static/media/Atliq.bc56491595026d5f793a.png",
     "static/media/profile.jpeg": "/Portfolio-henakharwa/static/media/profile.f69d7f60e14d845a7f01.jpeg",
     "static/media/Hena_Kharwa_Resume.pdf": "/Portfolio-henakharwa/static/media/Hena_Kharwa_Resume.c0786ef352ee53d65ca7.pdf",
     "static/media/enlighten.png": "/Portfolio-henakharwa/static/media/enlighten.0bc6e045157db7694f91.png",
     "static/media/stevens.png": "/Portfolio-henakharwa/static/media/stevens.a5accc7345627ea2c33b.png",
     "index.html": "/Portfolio-henakharwa/index.html",
-    "main.acc7ae76.css.map": "/Portfolio-henakharwa/static/css/main.acc7ae76.css.map",
-    "main.6f6e015f.js.map": "/Portfolio-henakharwa/static/js/main.6f6e015f.js.map",
-    "453.61c116cd.chunk.js.map": "/Portfolio-henakharwa/static/js/453.61c116cd.chunk.js.map"
+    "main.a4bc8f6b.css.map": "/Portfolio-henakharwa/static/css/main.a4bc8f6b.css.map",
+    "main.c2a5f583.js.map": "/Portfolio-henakharwa/static/js/main.c2a5f583.js.map",
+    "453.b903bf65.chunk.js.map": "/Portfolio-henakharwa/static/js/453.b903bf65.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.acc7ae76.css",
-    "static/js/main.6f6e015f.js"
+    "static/css/main.a4bc8f6b.css",
+    "static/js/main.c2a5f583.js"
   ]
 }
