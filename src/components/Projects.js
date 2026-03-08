@@ -3,6 +3,13 @@ import './Projects.css';
 
 const projects = [
   {
+    title: 'Financial Document Chatbot',
+    description:
+      'An AI-powered document intelligence system that lets users query large financial PDFs using two retrieval pipelines: classic vector-based RAG and PageIndex-style vectorless retrieval. Built with Gemini API, Streamlit, and Python, the platform supports document upload, reasoning-based section retrieval, and benchmarking to compare answer quality and latency across both approaches.',
+    tech: ['Python', 'Streamlit', 'Gemini API', 'RAG', 'PageIndex', 'NLP'],
+    github: 'https://github.com/henakharwa/Financial-Document-Chatbot',
+  },
+  {
     title: 'Hospitalist Companion App',
     description:
       'An intelligent clinical assistant that integrates patient data, medical knowledge, and voice-enabled conversational AI using a secure RAG pipeline (GPT-5 + AWS Bedrock) and FHIR-compliant backend—delivering real-time, evidence-based insights to accelerate physician decision-making and improve clinical efficiency.',
