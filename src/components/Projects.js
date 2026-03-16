@@ -3,6 +3,13 @@ import './Projects.css';
 
 const projects = [
   {
+    title: 'YouTube Ads Compliance Analyzer',
+    description:
+      'An AI-powered compliance analysis system that evaluates YouTube advertisements for policy violations using LLMs and a modular LangGraph pipeline. Built with Python and Azure OpenAI, Azure AI Search, Azure Video Indexer, and Application Insights, the platform supports transcript processing, structured compliance report generation, and LangSmith-powered pipeline monitoring.',
+    tech: ['Python', 'LangGraph', 'LangSmith', 'RAG', 'LLMs', 'NLP', 'Azure OpenAI', 'Azure AI Search', 'Azure Video Indexer', 'Azure AI Foundry', 'Application Insights','Compliance'],
+    github: 'https://github.com/henakharwa/Youtube-Ads-Compliance',
+  },
+  {
     title: 'Financial Document Chatbot',
     description:
       'An AI-powered document intelligence system that lets users query large financial PDFs using two retrieval pipelines: classic vector-based RAG and PageIndex-style vectorless retrieval. Built with Gemini API, Streamlit, and Python, the platform supports document upload, reasoning-based section retrieval, and benchmarking to compare answer quality and latency across both approaches.',

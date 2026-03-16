@@ -8,8 +8,15 @@ const About = () => {
       <div className="about-wrapper">
         <h1 className="about-heading">Introduction</h1>
 
+
         <p className="about-content">
-          Hi, I'm Hena Kharwa, a current graduate student pursuing MS in Applied AI at Stevens Institute of Technology 🎓 with a passion for applying machine learning techniques to real-life challenges in Software development industry. As a seasoned <span className="highlight">Artificial Intelligence Enthusiast</span> I specialize in Artificial Intelligence, Machine Learning, Deep Learning and Data Science.
+          <span className="highlight">ML Engineer</span> with <span className="highlight">2+ years </span> 
+          of experience building production-grade distributed systems — RAG pipelines, LLM fine-tuning, 
+          and large-scale ML infrastructure across healthcare and financial domains. Skilled in full-stack 
+          development, NLP, generative AI, and scalable inference deployments on AWS and Azure. My work 
+          has focused on developing compliance systems, reliable AI solutions, including recommendation 
+          systems and regulatory intelligence platforms.
+
         </p>
 
         <p className="about-content">
