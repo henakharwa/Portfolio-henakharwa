@@ -1,0 +1,12 @@
+name = "ask-hena-ai"
+main = "src/index.ts"
+compatibility_date = "2026-01-01"
+
+# Non-secret config. GEMINI_API_KEY is set separately as a secret — see
+# PORTFOLIO_SETUP.md, section 5 — never put it here.
+[vars]
+# Comma-separated list of browser origins allowed to call this Worker.
+# Replace with your real GitHub Pages URL after you deploy the site, and keep
+# the localhost entry for local development.
+ALLOWED_ORIGINS = "http://localhost:5173,https://henakharwa.github.io"
+GEMINI_MODEL = "gemini-3.5-flash"
