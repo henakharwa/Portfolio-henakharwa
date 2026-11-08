@@ -48,7 +48,7 @@ export const profile = {
     'deploying production workloads on AWS and Azure.',
   location: 'New York, United States',
   email: 'henakharwa@gmail.com',
-  resumeUrl: '/resume.pdf', // drop a resume.pdf into the public/ folder
+  resumeUrl: `${import.meta.env.BASE_URL}resume.pdf`, // respects Vite's base path (dev: '/', prod: '/Portfolio-henakharwa/')
   availableForHire: true,
 }
 
