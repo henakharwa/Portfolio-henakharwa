@@ -228,8 +228,8 @@ export const projects: Project[] = [
     id: 'proj-nexus',
     title: 'Nexus',
     description:
-      'Shared real-time workspace for human-agent teams — gates every AI coding agent write behind human approval and catches cross-agent API conflicts before they reach CI.',
-    tags: ['TypeScript', 'Next.js', 'PostgreSQL', 'WebSockets', 'MCP'],
+      'Multi-agent control plane for human-AI dev teams — orchestrates concurrent Claude Code and OpenCode agents with human-approval gating, audit logging, and pre-CI conflict detection across a shared repo.',
+    tags: ['TypeScript', 'Next.js', 'Multi-Agent Orchestration', 'MCP', 'Agent Governance', 'Human-in-the-Loop'],
     repoUrl: 'https://github.com/henakharwa/Nexus',
     liveUrl: 'https://nexus-work.duckdns.org/',
     featured: true,
@@ -263,7 +263,6 @@ export const projects: Project[] = [
       'AI system that analyzes YouTube ad transcripts with LLMs to automatically detect policy violations and generate compliance reports.',
     tags: ['Python', 'Azure OpenAI', 'LLMs', 'NLP', 'Prompt Engineering'],
     repoUrl: 'https://github.com/henakharwa/Youtube-Ads-Compliance',
-    featured: true,
     icon: ShieldCheck,
     tone: 'indigo',
     image: youtubeAdsComplianceCover,
