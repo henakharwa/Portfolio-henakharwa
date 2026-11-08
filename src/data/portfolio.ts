@@ -17,6 +17,7 @@ import {
   ShieldCheck,
   Sparkles,
   Stethoscope,
+  Users,
   type LucideIcon,
 } from 'lucide-react'
 import youtubeAdsComplianceCover from '../assets/projects/youtube-ads-compliance.webp'
@@ -223,6 +224,38 @@ export type Project = {
 }
 
 export const projects: Project[] = [
+  {
+    id: 'proj-nexus',
+    title: 'Nexus',
+    description:
+      'Shared real-time workspace for human-agent teams — gates every AI coding agent write behind human approval and catches cross-agent API conflicts before they reach CI.',
+    tags: ['TypeScript', 'Next.js', 'PostgreSQL', 'WebSockets', 'MCP'],
+    repoUrl: 'https://github.com/henakharwa/Nexus',
+    liveUrl: 'https://nexus-work.duckdns.org/',
+    featured: true,
+    icon: Users,
+    tone: 'cyan',
+    caseStudy: {
+      problem:
+        "Multiple AI coding agents (Claude Code, OpenCode, and others) can now work concurrently against the same codebase, but there's no shared layer to coordinate them — no visibility into what another agent is doing, no approval gate before its changes land, and no way to catch that two agents' changes will conflict until CI fails after the fact.",
+      approach: [
+        'Architected a real-time, scalable multiplayer workspace on WebSockets that integrates with GitHub, Slack, Linear, Notion, and Figma, so agents and the tools a team already uses stay in sync on one shared surface.',
+        'Gated every agent write behind human approval with Admin/Editor RBAC, audit-logging, and AES-256-GCM encrypted tokens, validated by a 583-test suite, so no agent action reaches a shared repo unreviewed.',
+        'Built a "Change Impact Room" workflow backed by versioned compatibility contracts and an automated verification gate, surfacing producer-consumer API conflicts between agents before they reach CI — with exactly-once workflow execution via Postgres row-locks.',
+      ],
+      architectureCaption:
+        'Agent actions route through the governance layer for human approval before touching the shared repo, while the Change Impact Room checks for cross-agent API conflicts ahead of CI.',
+      highlights: [
+        '100% of agent writes gated behind human approval — none reach the shared repo unreviewed.',
+        'Cross-agent conflict detection catches producer-consumer API breaks before they reach CI, not after.',
+        'Built solo from idea to production, validated by a 583-test suite.',
+      ],
+      nextSteps: [
+        'Expand the governance policy engine beyond the initial TS/JS pilot repo to other languages and stacks.',
+        'Add audit-log analytics so teams can see patterns in what agents propose versus what gets approved, not just a one-click revert.',
+      ],
+    },
+  },
   {
     id: 'proj-youtube-ads-compliance',
     title: 'YouTube Ads Compliance Analyzer',

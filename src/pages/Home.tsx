@@ -9,7 +9,7 @@ import AiAssistant from '../components/AiAssistant'
 import ProjectCard from '../components/ProjectCard'
 
 export default function Home() {
-  const featuredProjects = projects.filter((p) => p.featured).slice(0, 3)
+  const featuredProjects = projects.filter((p) => p.featured).slice(0, 4)
   const recognition = awards.filter((a) => a.image)
   const [resumeOpen, setResumeOpen] = useState(false)
 
