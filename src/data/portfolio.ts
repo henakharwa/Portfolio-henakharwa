@@ -83,7 +83,7 @@ export const skills: SkillGroup[] = [
   },
   {
     category: 'Agentic AI & LLM Orchestration',
-    items: ['LangChain', 'LangGraph', 'LangSmith', 'Crew AI', 'AutoGen', 'RAG', 'Knowledge Graph', 'MCP'],
+    items: ['LangChain', 'LangGraph', 'LangSmith', 'MCP', 'Multi-Agent Orchestration', 'Agent Governance', 'Claude Code', 'OpenCode', 'Tool Calling', 'Human-in-the-Loop Agents', 'RAG', 'Knowledge Graph'],
   },
   {
     category: 'Deployment & Infrastructure',
@@ -95,7 +95,7 @@ export const skills: SkillGroup[] = [
   },
   {
     category: 'Foundation Models',
-    items: ['Claude', 'Open AI', 'LLaMA', 'HuggingFace', 'BERT'],
+    items: ['Claude', 'OpenAI GPT-5', 'Llama-3', 'Hugging Face Transformers', 'BERT', 'DistilBERT', 'Word2Vec'],
   },
 ]
 
