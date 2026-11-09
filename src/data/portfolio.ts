@@ -112,26 +112,37 @@ export type TimelineEntry = {
 // Ordered most-recent first.
 export const timeline: TimelineEntry[] = [
   {
+    id: 'exp-agentlane',
+    kind: 'work',
+    status: 'ACTIVE',
+    period: 'Aug 2026 — Present',
+    title: 'Founder',
+    org: 'AgentLane',
+    location: 'New York, NY',
+    description:
+      "Building a vendor-neutral control plane for multi-agent governance, orchestration, and coordination: from policy-gated authorization to pre-merge conflict detection, the goal is safe, auditable collaboration between autonomous coding agents on a shared codebase. These efforts explore strategies like a human-approval policy engine with scoped per-repo permissions and a cross-agent 'Change Impact Room' workflow that surfaces producer-consumer API conflicts before they reach CI, validated through a 2-5 developer pilot coordinating concurrent Claude Code and OpenCode sessions against a shared GitHub repository",
+  },
+  {
     id: 'exp-1',
-    kind: 'research',
+    kind: 'work',
     status: 'PAST',
     period: 'Apr 2025 — May 2026',
-    title: 'Research Assistant',
+    title: 'AI Engineer',
     org: 'Stevens Institute of Technology',
     location: 'Hoboken, NJ',
     description:
-      'Working on trustworthy RAG systems: from anomaly detection in compliance documents to hallucination mitigation and large-scale serverless deployment, this research strengthens how enterprises can rely on AI-generated compliance insights, reaching 96% precision against an 81% BERT baseline. These efforts explore strategies like LoRA fine-tuning on Llama-3 8B and a serverless AWS pipeline processing 500K+ documents a month to cut hallucinations to 10% and push detection reliability forward',
+      'Working on trustworthy RAG systems: from anomaly detection in compliance documents to hallucination mitigation and large-scale serverless deployment, this work strengthens how enterprises can rely on AI-generated compliance insights, reaching 96% precision against an 81% BERT baseline. These efforts explore strategies like LoRA fine-tuning on Llama-3 8B and a serverless AWS pipeline processing 500K+ documents a month to cut hallucinations to 10% and push detection reliability forward',
   },
   {
     id: 'exp-2',
     kind: 'work',
     status: 'PAST',
     period: 'Nov 2025 — May 2026',
-    title: 'Generative AI Engineer',
+    title: 'AI Engineer',
     org: 'Enlighten Infosystems',
-    location: 'Vadodara, India',
+    location: 'Remote',
     description:
-      'Working on production GenAI infrastructure: from modular multi-step pipelines to fine-tuned language models and high-recall retrieval, this role builds the systems that let LLM applications run fast and reliably at scale. These efforts explore strategies like LangChain/LangGraph orchestration, PEFT/LoRA fine-tuning on GPT and LLaMA, and FAISS/Pinecone-backed RAG to cut latency by 35%, lift accuracy by 28%, and improve retrieval by 30%',
+      'Working on production GenAI infrastructure: from modular multi-step pipelines to fine-tuned language models and high-recall retrieval, this role builds the systems that let LLM applications run fast and reliably at scale. These efforts explore strategies like LangChain/LangGraph orchestration, PEFT/LoRA fine-tuning on GPT and LLaMA, and FAISS/Pinecone-backed RAG, cutting multi-step task latency 35%, lifting accuracy 28%, improving retrieval precision 30%, and reducing end-to-end inference latency 25% via containerized FastAPI microservices on AWS Lambda',
   },
   {
     id: 'edu-masters',
@@ -152,7 +163,7 @@ export const timeline: TimelineEntry[] = [
     org: 'Dhyey Technologies (TechXi)',
     location: 'Vadodara, India',
     description:
-      'Working on deep learning performance: from GPU-level training optimization to fine-tuned summarization models, focused on making models both faster to train and sharper in production, cutting training time from 12 to 8.4 hours while lifting accuracy from 58% to 81%. These efforts explore strategies like BERT/GPT-2 fine-tuning to improve MRR by 25% and cut inference latency by 35%',
+      'Working on deep learning performance: from GPU-level training optimization to fine-tuned retrieval models and automated deployment pipelines, focused on making models both faster to train and faster to ship. These efforts explore strategies like mixed-precision TensorFlow retuning and BERT embedding fine-tuning to lift accuracy from 58% to 81% while cutting training time 30%, improve retrieval MRR@10 by 25%, cut inference latency 35%, and shrink deployment cycles from 3 days to 5 hours via ONNX-based GitHub Actions/Azure ML CI/CD',
   },
   {
     id: 'edu-bachelors',
@@ -168,18 +179,18 @@ export const timeline: TimelineEntry[] = [
     kind: 'work',
     status: 'PAST',
     period: 'Sep 2022 — Nov 2023',
-    title: 'AI/ML Developer',
+    title: 'AI/ML Engineer',
     org: 'AtliQ Technologies',
     location: 'Vadodara, India',
     description:
-      'Working on recommendation systems at scale: from end-to-end model ownership to embedding-based personalization, replaced rule-based logic with learned representations across a 200K+ item catalog. These efforts explore strategies like PyTorch/CUDA hybrid recommenders and BERT/Word2Vec embeddings to cut misclassification by 25% and lift CTR by 20% and conversion by 5% in A/B testing',
+      'Working on recommendation systems at scale: from end-to-end model ownership to embedding-based personalization and production deployment, replaced rule-based logic with learned representations across a 200K+ item catalog. These efforts explore strategies like PyTorch/CUDA hybrid recommenders, BERT/Word2Vec embeddings, and FAISS-indexed DistilBERT retrieval, cutting recommendation errors 25%, lifting CTR 20% and conversions 5% in A/B testing, improving top-5 accuracy 18% over keyword-based retrieval, and sustaining 50K+ inference requests/day at sub-150ms p99 latency on Azure ML',
   },
   {
     id: 'exp-5',
     kind: 'work',
     status: 'PAST',
     period: 'May 2022 — Aug 2022',
-    title: 'Python and ML Intern',
+    title: 'AI/ML Intern',
     org: 'Enlighten Infosystems',
     location: 'Vadodara, India',
     description:
