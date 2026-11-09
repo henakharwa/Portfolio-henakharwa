@@ -26,6 +26,7 @@ import aiConnectCover from '../assets/projects/ai-connect.webp'
 import financialDocumentChatbotCover from '../assets/projects/financial-document-chatbot.webp'
 import newsMisinformationDetectionCover from '../assets/projects/news-misinformation-detection.webp'
 import preprightCover from '../assets/projects/prepright.webp'
+import nexusCover from '../assets/projects/nexus.webp'
 import stockMarketPredictionCover from '../assets/projects/stock-market-prediction.webp'
 import sourceCodeClassificationCover from '../assets/projects/source-code-classification.webp'
 import signLanguageRecognitionCover from '../assets/projects/sign-language-recognition.webp'
@@ -246,6 +247,7 @@ export const projects: Project[] = [
     featured: true,
     icon: Users,
     tone: 'cyan',
+    image: nexusCover,
     caseStudy: {
       problem:
         "Multiple AI coding agents (Claude Code, OpenCode, and others) can now work concurrently against the same codebase, but there's no shared layer to coordinate them — no visibility into what another agent is doing, no approval gate before its changes land, and no way to catch that two agents' changes will conflict until CI fails after the fact.",
