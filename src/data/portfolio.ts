@@ -228,7 +228,7 @@ export const projects: Project[] = [
     id: 'proj-nexus',
     title: 'Nexus',
     description:
-      'Multi-agent control plane for human-AI dev teams — orchestrates concurrent Claude Code and OpenCode agents with human-approval gating, audit logging, and pre-CI conflict detection across a shared repo.',
+      'Multi-agent control plane for human-AI dev teams to orchestrate concurrent Claude Code and OpenCode agents with human-approval gating, audit logging, and pre-CI conflict detection across a shared repo.',
     tags: ['TypeScript', 'Next.js', 'Multi-Agent Orchestration', 'MCP', 'Agent Governance', 'Human-in-the-Loop'],
     repoUrl: 'https://github.com/henakharwa/Nexus',
     liveUrl: 'https://nexus-work.duckdns.org/',
